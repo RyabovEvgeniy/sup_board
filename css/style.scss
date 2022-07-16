@@ -28,8 +28,11 @@ body {
 
 // header
 .header {
-	background: url("../img/header-bg.jpg") 0 / cover no-repeat;
-	height: 100vh; // картинка занимает всю высоту экрана
+	background-image: url(../img/header-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 100vh; // картинка занимает всю высоту экрана
 
 
 	// .header__container
@@ -76,18 +79,32 @@ body {
 	// .header__content
 
 	&__content {
+		min-height: calc(100vh - 154px);
+		display: flex;
+		text-align: center;
+		justify-content: flex-end;
+		font-family: "Comfortaa", cursive;
+		font-style: normal;
+		font-weight: 700;
 	}
 
 	// .header__content-box
 
 	&__content-box {
+		max-width: 550px;
+		text-align: center;
+		margin: 0px 40px 0px 0px;
+		color: #fff;
+
 	}
 
 	// .header__title
 
 	&__title {
+		font-size: 64px;
 		line-height: 1.1;
-		color: #ffffff;
+		text-transform: uppercase;
+		margin: 0px 0px 20px 0px;
 	}
 
 	// .header__text
@@ -95,7 +112,7 @@ body {
 	&__text {
 		font-size: 24px;
 		line-height: 1.12;
-		color: #ffffff;
+		margin: 0px 0px 20px 0px;
 	}
 
 	// .header__decor-text

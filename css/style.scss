@@ -3,9 +3,10 @@
 
 // Основные настройки страницы
 body {
+	// font-family: 'Comfortaa', cursive;
 	font-family: "Inter", sans-serif;
 	background: #f5f5f5;
-	color: #fff;
+	color: #262c27;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 1.2;
@@ -24,5 +25,90 @@ body {
 	margin: 0 auto;
 	padding: 0px 10px;
 }
-// 
 
+// header
+.header {
+	background: url("../img/header-bg.jpg") 0 / cover no-repeat;
+	height: 100vh; // картинка занимает всю высоту экрана
+
+
+	// .header__container
+
+	&__container {
+	}
+
+	// .header__top
+
+	&__top {
+		display: flex;
+		align-items: center;
+		padding: 57px 0px;
+		gap: 100px;
+		justify-content: flex-end;
+		font-family: "Comfortaa", cursive;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 1.1;
+	}
+
+	// .header__btn
+
+	&__btn {
+		text-transform: uppercase;
+		color: #fff;
+		padding: 12px 71px;
+		background-color: #262c27;
+		transition: all 0.3s ease;
+		cursor: pointer;
+		&:hover {
+			background-color: #B9C400;
+			color: #262c27;
+			transition: all 0.3s ease;
+		}
+	}
+
+	// .header__phone
+
+	&__phone {
+	}
+
+	// .header__content
+
+	&__content {
+	}
+
+	// .header__content-box
+
+	&__content-box {
+	}
+
+	// .header__title
+
+	&__title {
+		line-height: 1.1;
+		color: #ffffff;
+	}
+
+	// .header__text
+
+	&__text {
+		font-size: 24px;
+		line-height: 1.12;
+		color: #ffffff;
+	}
+
+	// .header__decor-text
+
+	&__decor-text {
+	}
+}
+.logo {
+	path {
+		transition: fill 0.3s ease;
+	}
+	&:hover path {
+		fill: #0093a1;
+		transition: fill 0.3s ease;
+	}
+}

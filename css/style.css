@@ -105,9 +105,9 @@ body {
   right: 0;
   left: 0;
   height: 456px;
-  -webkit-transform: translateY(50%);
-      -ms-transform: translateY(50%);
-          transform: translateY(50%);
+  -webkit-transform: translateY(70%);
+      -ms-transform: translateY(70%);
+          transform: translateY(70%);
   z-index: 2;
 }
 
@@ -159,7 +159,7 @@ body {
 }
 
 .header__btn:hover {
-  background-color: #B9C400;
+  background-color: #b9c400;
   color: #262c27;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -185,6 +185,7 @@ body {
   font-family: "Comfortaa", cursive;
   font-style: normal;
   font-weight: 700;
+  position: relative;
 }
 
 .header__content-box {
@@ -205,6 +206,43 @@ body {
   font-size: 24px;
   line-height: 1.12;
   margin: 0px 0px 20px 0px;
+}
+
+.header__decor-text {
+  position: absolute;
+  bottom: 10px;
+  color: #0093a1;
+}
+
+.header__decor-text_one {
+  z-index: 1;
+  font-family: "Comfortaa", cursive;
+  font-size: 130px;
+  line-height: 1.1;
+  opacity: 0.3;
+  right: 142px;
+  bottom: 0;
+}
+
+.header__decor-text_two {
+  z-index: 4;
+  font-family: "Comfortaa", cursive;
+  font-size: 130px;
+  line-height: 1.1;
+  opacity: 0.3;
+  left: 265px;
+  bottom: -125px;
+}
+
+.header__decor-text_three {
+  max-width: 306px;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 32px;
+  text-align: center;
+  right: 135px;
+  z-index: 4;
+  bottom: -95px;
 }
 
 .logo path {

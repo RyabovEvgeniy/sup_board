@@ -33,6 +33,35 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	min-height: 100vh; // картинка занимает всю высоту экрана
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		background-image: url(../img/header-decor.svg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		height: 456px;
+		transform: translateY(50%);
+		z-index: 2;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		background-image: url(../img/header-decor.svg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		height: 456px;
+		transform: translateY(100%) rotate(180deg);
+		z-index: 3;
+	}
 
 
 	// .header__container
@@ -83,7 +112,7 @@ body {
 		min-height: calc(100vh - 154px);
 		display: flex;
 		text-align: center;
-		align-items: center;
+		align-items: center; 
 		justify-content: flex-end;
 		font-family: "Comfortaa", cursive;
 		font-style: normal;

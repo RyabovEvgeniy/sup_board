@@ -91,6 +91,41 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
+  position: relative;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/header-decor.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 456px;
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  z-index: 2;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/header-decor.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 456px;
+  -webkit-transform: translateY(100%) rotate(180deg);
+      -ms-transform: translateY(100%) rotate(180deg);
+          transform: translateY(100%) rotate(180deg);
+  z-index: 3;
 }
 
 .header__top {

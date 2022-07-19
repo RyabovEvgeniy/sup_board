@@ -254,3 +254,106 @@ body {
   -o-transition: fill 0.3s ease;
   transition: fill 0.3s ease;
 }
+
+.info {
+  background: url("../img/info-bg.jpg") center/cover no-repeat;
+  color: #fff;
+}
+
+.info__inner {
+  padding: 255px 0px 50px 0px;
+}
+
+.info__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 87px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.info__top-text {
+  max-width: 290px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 82px;
+}
+
+.info__btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.info__top-img {
+  position: relative;
+  z-index: 6;
+}
+
+.info__specs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 162px;
+}
+
+.info__specs-title {
+  font-size: 60px;
+  line-height: 1.11;
+}
+
+.info__specs-list {
+  font-weight: 700;
+}
+
+.info__specs-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info__specs-item:not(:last-child) {
+  margin: 0px 0px 24px 0px;
+}
+
+.popup-btn {
+  cursor: pointer;
+  background-color: transparent;
+  text-align: center;
+}
+
+.popup-btn span {
+  padding: 12px 0px 0px 0px;
+  display: block;
+  color: #fff;
+}
+
+.popup-btn:hover path {
+  fill: #b9c400;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.popup-btn:hover circle {
+  stroke: #b9c400;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.popup-btn:hover span {
+  color: #b9c400;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}

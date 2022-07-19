@@ -28,11 +28,13 @@ body {
 
 // header
 .header {
-	background-image: url(../img/header-bg.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	min-height: 100vh; // картинка занимает всю высоту экрана
+	// background-image: url(../img/header-bg.jpg);
+	// background-size: cover;
+	// background-repeat: no-repeat;
+	// background-position: center;
+	// min-height: 100vh; // картинка занимает всю высоту экрана
+	background: url('../img/header-bg.jpg') center / cover no-repeat;
+	min-height: 860px;
 	position: relative;
 	&::before {
 		content: "";
@@ -45,7 +47,7 @@ body {
 		right: 0;
 		left: 0;
 		height: 456px;
-		transform: translateY(70%);
+		transform: translateY(50%);
 		z-index: 2;
 	}
 	&::after {
@@ -102,13 +104,14 @@ body {
 	// .header__phone
 
 	&__phone {
-		color: #fff;
+		color: #262c27;
 	}
 
 	// .header__content
 
 	&__content {
-		min-height: calc(100vh - 154px);
+		// min-height: calc(100vh - 154px);
+		padding: 206px 0px 120px 0px;
 		display: flex;
 		text-align: center;
 		align-items: center;
@@ -158,7 +161,7 @@ body {
 			line-height: 1.1;
 			opacity: 0.3;
 			right: 142px;
-			bottom: 0;
+			bottom: -140px;
 		}
 		&_two {
 			z-index: 4;
@@ -167,7 +170,7 @@ body {
 			line-height: 1.1;
 			opacity: 0.3;
 			left: 265px;
-			bottom: -125px;
+			bottom: -290px;
 		}
 		&_three {
 			max-width: 306px;
@@ -178,7 +181,7 @@ body {
 			text-align: center;
 			right: 135px;
 			z-index: 4;
-			bottom: -95px;
+			bottom: -250px;
 		}
 	}
 }

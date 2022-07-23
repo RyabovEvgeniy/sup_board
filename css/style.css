@@ -286,6 +286,7 @@ body {
   display: flex;
   gap: 87px;
   padding: 100px 0px 0px 0px;
+  margin-bottom: 65vh;
 }
 
 .info__top-text {
@@ -318,25 +319,41 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 162px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 0px 50px 0px;
 }
 
 .info__specs-title {
   font-size: 60px;
   line-height: 1.11;
+  text-transform: uppercase;
+  font-family: 'Comfortaa', cursive;
+  width: 215px;
 }
 
 .info__specs-list {
   font-weight: 700;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 30px 0px;
+  width: 565px;
 }
 
 .info__specs-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 25px;
 }
 
 .info__specs-item:not(:last-child) {
-  margin: 0px 0px 24px 0px;
+  margin: 0px 0px 15px 0px;
+}
+
+.info__specs-caption {
+  width: 185px;
 }
 
 .popup-btn {

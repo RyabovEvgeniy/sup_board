@@ -231,6 +231,7 @@ body {
 		gap: 87px;
 		// align-items: flex-end;
 		padding: 100px 0px 0px 0px;
+		margin-bottom: 65vh;
 	}
 
 	// .info__top-text
@@ -267,6 +268,8 @@ body {
 	&__specs {
 		display: flex;
 		gap: 162px;
+		align-items: center;
+		padding: 0px 0px 50px 0px;
 	}
 
 	// .info__specs-title
@@ -274,26 +277,36 @@ body {
 	&__specs-title {
 		font-size: 60px;
 		line-height: 1.11;
+		text-transform: uppercase;
+		font-family: 'Comfortaa', cursive;
+		width: 215px;
 	}
 
 	// .info__specs-list
 
 	&__specs-list {
 		font-weight: 700;
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		padding: 30px 0px;
+		width: 565px;
 	}
 
 	// .info__specs-item
 
 	&__specs-item {
 		display: flex;
+		gap: 25px;
 		&:not(:last-child) {
-			margin: 0px 0px 24px 0px;
+			margin: 0px 0px 15px 0px;
 		}
 	}
 
 	// .info__specs-caption
 
 	&__specs-caption {
+		width: 185px;
+		// margin: 0px 25px 0px 0px;;
 	}
 
 	// .info__specs-text

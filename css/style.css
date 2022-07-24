@@ -490,3 +490,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.technology {
+  background: url("../img/technology-bg.png") 0 0 no-repeat;
+}

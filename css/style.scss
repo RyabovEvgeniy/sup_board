@@ -5,7 +5,7 @@
 body {
 	// font-family: 'Comfortaa', cursive;
 	font-family: "Inter", sans-serif;
-	background: #f5f5f5;
+	background: #fff;
 	color: #262c27;
 	font-size: 18px;
 	font-weight: 400;
@@ -24,6 +24,13 @@ body {
 	max-width: 1220px;
 	margin: 0 auto;
 	padding: 0px 10px;
+}
+
+.title {
+	font-family: "Comfortaa", cursive;
+	text-transform: uppercase;
+	font-size: 60px;
+	line-height: 1.11;
 }
 
 // header
@@ -275,10 +282,6 @@ body {
 	// .info__specs-title
 
 	&__specs-title {
-		font-size: 60px;
-		line-height: 1.11;
-		text-transform: uppercase;
-		font-family: "Comfortaa", cursive;
 		width: 215px;
 	}
 
@@ -338,8 +341,6 @@ body {
 }
 
 .buy {
-	background-color: #fff;
-
 	// .buy__container
 
 	&__container {
@@ -352,7 +353,7 @@ body {
 		justify-content: center;
 		align-items: center;
 		gap: 97px;
-		padding: 150px 0px 172px 0px;
+		padding: 150px 0px 0px 0px;
 	}
 
 	// .buy__content
@@ -425,7 +426,7 @@ body {
 		&:hover {
 			background-color: #b9c400;
 			color: #262c27;
-			border-color:#b9c400;
+			border-color: #b9c400;
 			transition: all 0.3s ease;
 		}
 	}
@@ -440,7 +441,7 @@ body {
 		height: 199px;
 		font-weight: 700;
 		font-size: 35px;
-		background: url('../img/buy-decor.svg') 0 0 no-repeat;
+		background: url("../img/buy-decor.svg") 0 0 no-repeat;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -448,11 +449,12 @@ body {
 }
 
 .technology {
-	background: url('../img/technology-bg.png') 0 0 no-repeat;
+	margin: 0px 0px 150px 0px;
 
 	// .technology__top
 
 	&__top {
+		background: url("../img/technology-bg.png") center / cover no-repeat;
 	}
 
 	// .technology__container
@@ -463,27 +465,111 @@ body {
 	// .technology__top-inner
 
 	&__top-inner {
+		min-height: 110vh;
+		position: relative;
 	}
 
 	// .technology__btn
 
 	&__btn {
+		position: absolute;
+		right: 356px;
+		top: 50vh;
+	}
+
+	// .technology-box
+	&__top-box {
+		position: absolute;
+		left: 0;
+		bottom: 85px;
 	}
 
 	// .technology__title
 
 	&__title {
+		max-width: 470px;
+		margin: 0px 0px 62px 0px;
 	}
 
 	// .technology__list
 
 	&__list {
+		padding: 0px 0px 0px 20px;
 	}
-
+	
 	// .technology__list-item
-
+	
 	&__list-item {
+		font-size: 20px;		
+		font-weight: 700;
+		list-style-type: decimal;
+		padding: 0px 0px 0px 24px;
+		&:not(:last-child) {
+			margin: 0px 0px 15px 0px;
+		}
 	}
 }
-.popup-btn {
+
+.gallery {
+
+	// .gallery__container
+
+	&__container {
+	}
+
+	// .gallery__inner
+
+	&__inner {
+	}
+
+	// .gallery__box
+
+	&__box {
+		display: flex;
+		gap: 68px;
+		margin: 115px 0px 0px 0px;
+	}
+
+	// .gallery__text
+
+	&__text {
+		max-width: 350px;
+	}
 }
+.gallery-min {
+	display: grid;
+	gap: 30px 24px;
+	grid-template-columns: 481px 208px;
+	grid-template-rows: 432px 300px;
+
+	// .gallery-min__img
+
+	&__img {
+		width: 100%;
+	}
+
+	&__img_1 {
+		grid-column: 1 / 3;
+	}
+
+	&__img_2 {
+		grid-column: 1 / 2;
+	}
+
+	&__img_3 {
+		grid-column: 2 / 3;
+	}
+}
+.gallery-max {
+
+	// .gallery-max__img
+
+	&__img {
+	}
+
+	// .gallery-max__text
+
+	&__text {
+	}
+}
+

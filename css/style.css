@@ -266,7 +266,7 @@ body {
   content: "";
   position: absolute;
   height: 180px;
-  background-color: #262C27;
+  background-color: #262c27;
   top: 0;
   right: 0;
   left: 0;
@@ -329,7 +329,7 @@ body {
   font-size: 60px;
   line-height: 1.11;
   text-transform: uppercase;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   width: 215px;
 }
 
@@ -387,4 +387,106 @@ body {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.buy {
+  background-color: #fff;
+}
+
+.buy__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 97px;
+  padding: 150px 0px 172px 0px;
+}
+
+.buy__content {
+  max-width: 502px;
+  position: relative;
+}
+
+.buy__title {
+  font-size: 60px;
+  line-height: 1.11;
+  text-transform: uppercase;
+  font-family: "Comfortaa", cursive;
+  color: #0093a1;
+  margin: 0px 0px 50px 0px;
+}
+
+.buy__item {
+  max-width: 285px;
+}
+
+.buy__item:not(:last-child) {
+  margin: 0px 0px 25px 0px;
+}
+
+.buy__item:hover .buy__item-title {
+  color: #0093a1;
+}
+
+.buy__item-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0px 0px 5px 0px;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.buy__btn {
+  display: block;
+  max-width: 484px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.12;
+  padding: 18px 0px;
+  margin: 68px 0px 0px 0px;
+  background-color: transparent;
+  color: #0093a1;
+  border: 2px solid #0093a1;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.buy__btn:hover {
+  background-color: #b9c400;
+  color: #262c27;
+  border-color: #b9c400;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.buy__price {
+  position: absolute;
+  right: 0;
+  bottom: 150px;
+  width: 201px;
+  height: 199px;
+  font-weight: 700;
+  font-size: 35px;
+  background: url("../img/buy-decor.svg") 0 0 no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

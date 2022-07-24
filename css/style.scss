@@ -205,7 +205,7 @@ body {
 		content: "";
 		position: absolute;
 		height: 180px;
-		background-color: #262C27;
+		background-color: #262c27;
 		top: 0;
 		right: 0;
 		left: 0;
@@ -278,7 +278,7 @@ body {
 		font-size: 60px;
 		line-height: 1.11;
 		text-transform: uppercase;
-		font-family: 'Comfortaa', cursive;
+		font-family: "Comfortaa", cursive;
 		width: 215px;
 	}
 
@@ -334,5 +334,115 @@ body {
 	&:hover span {
 		color: #b9c400;
 		transition: all 0.3s ease;
+	}
+}
+
+.buy {
+	background-color: #fff;
+
+	// .buy__container
+
+	&__container {
+	}
+
+	// .buy__inner
+
+	&__inner {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 97px;
+		padding: 150px 0px 172px 0px;
+	}
+
+	// .buy__content
+
+	&__content {
+		max-width: 502px;
+		position: relative;
+	}
+
+	// .buy__title
+
+	&__title {
+		font-size: 60px;
+		line-height: 1.11;
+		text-transform: uppercase;
+		font-family: "Comfortaa", cursive;
+		color: #0093a1;
+		margin: 0px 0px 50px 0px;
+	}
+
+	// .buy__list
+
+	&__list {
+	}
+
+	// .buy__item
+
+	&__item {
+		max-width: 285px;
+		&:not(:last-child) {
+			margin: 0px 0px 25px 0px;
+		}
+		&:hover &-title {
+			color: #0093a1;
+		}
+	}
+
+	// .buy__item-title
+
+	&__item-title {
+		font-weight: 700;
+		text-transform: uppercase;
+		margin: 0px 0px 5px 0px;
+		transition: color 0.3s ease;
+	}
+
+	// .buy__item-text
+
+	&__item-text {
+	}
+
+	// .buy__btn
+
+	&__btn {
+		display: block;
+		max-width: 484px;
+		text-transform: uppercase;
+		text-align: center;
+		font-family: "Comfortaa", cursive;
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 1.12;
+		padding: 18px 0px;
+		margin: 68px 0px 0px 0px;
+		background-color: transparent;
+		color: #0093a1;
+		border: 2px solid #0093a1;
+		transition: all 0.3s ease;
+		cursor: pointer;
+		&:hover {
+			background-color: #b9c400;
+			color: #262c27;
+			border-color:#b9c400;
+			transition: all 0.3s ease;
+		}
+	}
+
+	// .buy__price
+
+	&__price {
+		position: absolute;
+		right: 0;
+		bottom: 150px;
+		width: 201px;
+		height: 199px;
+		font-weight: 700;
+		font-size: 35px;
+		background: url('../img/buy-decor.svg') 0 0 no-repeat;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }

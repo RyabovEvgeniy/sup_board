@@ -641,3 +641,134 @@ body {
   grid-column: 2 / -1;
   border-radius: 0px 0px 0px 400px;
 }
+
+.footer {
+  background-color: #262c27;
+  padding: 100px 0px 80px 0px;
+  color: #fff;
+}
+
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 97px;
+}
+
+.footer__form {
+  max-width: 500px;
+}
+
+.footer__title {
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+
+.footer__input {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 10px 5px;
+  margin-bottom: 57px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.2);
+  caret-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer__input:focus {
+  outline: none;
+}
+
+.footer__input::-webkit-input-placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.footer__input:-ms-input-placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.footer__input::-ms-input-placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.footer__input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.footer__btn {
+  display: inline-block;
+  padding: 10px 66px;
+  text-transform: uppercase;
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.1;
+  font-family: "Comfortaa", cursive;
+  cursor: pointer;
+}
+
+.footer__logo {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.footer__logo path {
+  -webkit-transition: fill .3s;
+  -o-transition: fill .3s;
+  transition: fill .3s;
+}
+
+.footer__logo:hover path {
+  fill: #0093a1;
+}
+
+.footer__social-title {
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+.footer__gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 52px;
+  margin-bottom: 49px;
+}
+
+.footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 90px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__menu-link {
+  font-weight: 700;
+}

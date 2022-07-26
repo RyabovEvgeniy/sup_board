@@ -642,3 +642,135 @@ body {
 		border-radius: 0px 0px 0px 400px;
 	}
 }
+
+.footer {
+	background-color: #262c27;
+	padding: 100px 0px 80px 0px;
+	color: #fff;
+
+	// .footer__container
+
+	&__container {
+	}
+
+	// .footer__inner
+
+	&__inner {
+	}
+
+	// .footer__top
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 97px;
+	}
+
+	// .footer__form
+
+	&__form {
+		max-width: 500px;
+	}
+
+	// .footer__title
+
+	&__title {
+		text-transform: uppercase;
+		margin-bottom: 27px;
+	}
+
+	// .footer__input
+
+	&__input {
+		display: block;
+		width: 100%;
+		background-color: transparent;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+		padding: 10px 5px;
+		margin-bottom: 57px;
+		font-family: "Inter", sans-serif;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 1.2;
+		color: rgba(255, 255, 255, 0.2);
+		caret-color: rgba(255, 255, 255, 0.2);
+		&:focus {
+			outline: none;
+		}
+		&::placeholder {
+			font-family: "Inter", sans-serif;
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 1.2;
+			color: rgba(255, 255, 255, 0.2);
+		}
+	}
+
+	// .footer__btn
+
+	&__btn {
+		display: inline-block;
+		padding: 10px 66px;
+		text-transform: uppercase;
+		background-color: #fff;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 1.1;
+		font-family: "Comfortaa", cursive;
+		cursor: pointer;
+	}
+
+	// .footer__logo
+
+	&__logo {
+		align-self: flex-start;
+		path {
+			transition: fill .3s;
+		}
+		&:hover path {
+			fill: #0093a1;
+		}
+	}
+
+	// .footer__social-title
+
+	&__social-title {
+		font-weight: 700;
+		margin-bottom: 28px;
+	}
+
+	// .footer__gallery
+
+	&__gallery {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 52px;
+		margin-bottom: 49px;
+	}
+
+	// .footer__gallery-item
+
+	&__gallery-item {
+	}
+
+	// .footer__menu
+
+	&__menu {
+		display: flex;
+		gap: 90px;
+		justify-content: space-between;
+	}
+
+	// .footer__menu-item
+
+	&__menu-item {
+	}
+
+	// .footer__menu-link
+
+	&__menu-link {
+		font-weight: 700;
+	}
+}
+.title {
+}

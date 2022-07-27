@@ -1,0 +1,32 @@
+@media (max-width: 1230px) {
+	.header__decor-text_two {
+		left: 0;
+	}	
+}
+
+@media (max-width: 720px) {
+	.header__top {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 30px 90px;
+	}
+	.header__btn {
+		width: 70%;
+	}
+	.header__content-box {
+		margin: 0;
+	}
+}
+
+@media (max-width: 414px) {
+	.header__decor-text {
+		display: none;
+	}
+}
+
+@media (max-width: 375px) {
+	.header__title {
+		font-size: 50px;
+	}
+	
+}
